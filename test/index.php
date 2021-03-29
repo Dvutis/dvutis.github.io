@@ -7,7 +7,7 @@
 <body>
     <?php
         $say = 'Hello world!';
-        include 'test/1.php';
+        include '1.php';
 echo $test;
         echo "<p>End</p>";
     ?>
