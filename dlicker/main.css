@@ -27,3 +27,18 @@ nav .animation{
   transition: all .5s ease 0s;
   border-radius: 8px;
 }
+a:nth-cild(1) {
+  width: 110px;
+}
+a:nth-cild(2) {
+  width: 140px;
+}
+a:nth-cild(3) {
+  width: 90px;
+}
+a:nth-cild(4) {
+  width: 110px;
+}
+a:nth-cild(5) {
+  width: 110px;
+}
