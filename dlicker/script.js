@@ -9,6 +9,13 @@ let content3 = document.getElementById("content3")
 let content4 = document.getElementById("content4")
 let content5 = document.getElementById("content5")
 
+
+content2.style.display = "none"
+content3.style.display = "none"
+content4.style.display = "none"
+content5.style.display = "none"
+
+
 profil.addEventListener("click", () => {
     content1.style.display = "block"
     content2.style.display = "none"
