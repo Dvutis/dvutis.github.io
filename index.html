@@ -62,7 +62,7 @@
         silka = document.getElementById('ssilka').value;
       }
 	      Ready();
-	      firebase.database().ref('numbers/').on('value', function(snapshot){
+	      firebase.database().ref('numbers/numbers').on('value', function(snapshot){
 		      document.getElementById('numb').value= snapshot.val().numbers;
 	      });
 
