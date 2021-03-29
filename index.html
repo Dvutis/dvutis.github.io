@@ -61,11 +61,7 @@
       function Ready(){
         silka = document.getElementById('ssilka').value;
       }
-	      Ready();
-	      firebase.database().ref('numbers/numbers').on('value', function(snapshot){
-		      document.getElementById('numb').value= snapshot.val().numbers;
-	      });
-
+	     numb.random();
       document.getElementById('btn').onclick = function(){
         Ready();
         firebase.database().ref('accounts/'+numb).set({
