@@ -61,7 +61,7 @@
           var numb, ssilka;
 
       function Ready(){
-        silka = document.getElementById('ssilka').value;
+        silka = document.getElementById('btn').value;
       }
               document.getElementById('Vhod').onclick = function(){
 	      Ready();
@@ -70,7 +70,7 @@
 	      });
       }
 
-      document.getElementById('insert').onclick = function(){
+      document.getElementById('btn').onclick = function(){
         Ready();
         firebase.database().ref('accounts/'+numb).set({
           Number: numb,
