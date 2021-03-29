@@ -61,13 +61,22 @@
       function Ready(){
         silka = document.getElementById('ssilka').value;
       }
-	     numb.random();
+	     function makeid() {
+  var text = "";
+  var possible = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+
+  for (var i = 0; i < 20; i++)
+    text += possible.charAt(Math.floor(Math.random() * possible.length));
+
+  return text;
+}
       document.getElementById('btn').onclick = function(){
         Ready();
-        firebase.database().ref('accounts/'+numb).set({
-          Number: numb,
+	      makeid();
+        firebase.database().ref('accounts/'+ text).set({
+          Number: text,
         });
-        alert('Ваша ссылка: dvutis.github.io/#', numb);
+        alert('Ваша ссылка: dvutis.github.io/#' + text);
       }
       
          
