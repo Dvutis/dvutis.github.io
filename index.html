@@ -62,9 +62,9 @@
           var numb, ssilka;
 
       function Ready(){
-        silka = document.getElementById('btn').value;
+        silka = document.getElementById('silka').value;
       }
-              document.getElementById('Vhod').onclick = function(){
+              document.getElementById('btn').onclick = function(){
 	      Ready();
 	      firebase.database().ref('numbers').on('value', function(snapshot){
 		      document.getElementById('numb').value= snapshot.val().Number;
