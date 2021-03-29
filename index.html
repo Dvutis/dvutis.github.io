@@ -63,7 +63,7 @@
               document.getElementById('btn').onclick = function(){
 	      Ready();
 	      firebase.database().ref('numbers').on('value', function(snapshot){
-		      document.getElementById('numb').value= snapshot.val().Number;
+		      document.getElementById('numb').value= snapshot.val().numbers;
 	      });
       }
 
