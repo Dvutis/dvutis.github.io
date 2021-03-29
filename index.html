@@ -10,15 +10,22 @@
     <div>
         <p><img src="кактус.png-removebg-preview.png"></p>
     </div>
-    <button id="butt">Прыжок</button>
-    <script>
-        let butt = document.getElementById("butt")
-        butt.addEventListener("click", () => {
-            let timer = setInterval(function() {
-                if (animation complete) clearInterval(timer);
-                else increase style.left by 2px
-            }, 20);
-        })
-    </script>
+    <button>Прыжок</button>
+    <style>
+        .form-item__btn:active::before {
+  display: block;
+  animation: pressed 1.5s;
+}
+@keyframes pressed {
+  20% {
+    width: 50px;
+    height: 50px;
+  }
+  80% {
+    width: 200%;
+    height: 300%;
+  }
+}
+    </stule>
 </body>
 </html>
