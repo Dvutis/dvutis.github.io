@@ -33,5 +33,52 @@
         }
             
     </style>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-analytics.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  var firebaseConfig = {
+    apiKey: "AIzaSyDDlr68INOXdoxSGYKqqdtPsysC3PBZ6Jw",
+    authDomain: "sokrachchenie.firebaseapp.com",
+    databaseURL: "https://sokrachchenie-default-rtdb.firebaseio.com",
+    projectId: "sokrachchenie",
+    storageBucket: "sokrachchenie.appspot.com",
+    messagingSenderId: "449986224612",
+    appId: "1:449986224612:web:563125a960caa91f32e7f1",
+    measurementId: "G-WFQB5TQL0N"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
+    <script>
+          var numb, ssilka;
+
+      function Ready(){
+        silka = document.getElementById('ssilka').value;
+      }
+              document.getElementById('Vhod').onclick = function(){
+	      Ready();
+	      firebase.database().ref('numbers').on('value', function(snapshot){
+		      document.getElementById('numb').value= snapshot.val().Number;
+	      });
+      }
+
+      document.getElementById('insert').onclick = function(){
+        Ready();
+        firebase.database().ref('accounts/'+numb).set({
+          Number: numb,
+        });
+        alert('Ваша ссылка: dvutis.github.io/#', numb);
+      }
+      
+         
+    </script>
 </body>
 </html>
