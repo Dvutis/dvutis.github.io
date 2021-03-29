@@ -1,4 +1,10 @@
-
+bridge.send("VKWebAppInit");
+{
+  "type":"VKWebAppInitResult",
+  "data":{
+    "result": true
+  }
+}
 
 
 let profil = document.getElementById("profil")
